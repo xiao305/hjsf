@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preload" href="hong.jpg" as="image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红姐私房联系信息</title>
+    <style>
+        /* 优化后的样式系统 */
+        :root {
+            --primary: #e4393c;
+            --secondary: #FFF0F0;
+            --accent: #FFD700;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(145deg, #FFF8F8 0%, #FFF 100%);
+            margin: 0;
+            padding: 20px 15px;
+            min-height: 100vh;
+        }
+        .contact-box {
+            background: rgba(255,255,255,0.95);
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(228, 57, 60, 0.08);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: visible;
+            border: 1px solid rgba(228, 57, 60, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin: 0 0 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23e4393c" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4-4l1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>');
+        }
+        .qr-code {
+            width: 180px;
+            height: auto;
+            max-width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            margin: 20px auto;
+            border: 3px solid var(--primary);
+            border-radius: 16px;
+            padding: 10px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .wechat-id {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin: 20px auto;
+            width: fit-content;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* 新增手机号样式 */
+        .phone-number {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin: 15px auto;
+            width: fit-content;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 仅保留的店主微信 -->
+    <div class="contact-box">
+        <h2>店主微信</h2>
+        <p>📞 131-5278-1541</p> <!-- 新增手机号 -->
+        <div class="decorative-line"></div>
+        <img src="https://xiao305.github.io/gjsf/h.png " 
+             alt="店主微信二维码"
+             class="qr-code">
+        <p class="qr-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" style="fill:#666">
+                <path d="M9.5 3A6.5 6.5 0 0 0 3 9.5v5A6.5 6.5 0 0 0 9.5 21h5a6.5 6.5 0 0 0 6.5-6.5V9.5A6.5 6.5 0 0 0 14.5 3H9.5m0 2h5A4.5 4.5 0 0 1 19 9.5v5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 5 14.5v-5A4.5 4.5 0 0 1 9.5 5Z"/>
+            </svg>
+            长按二维码可直接识别
+        </p>
+        <div class="wechat-id">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: #e4393c">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+            </svg>
+            w1023586294
+        </div>
+    </div>
+</body>
+</html>
